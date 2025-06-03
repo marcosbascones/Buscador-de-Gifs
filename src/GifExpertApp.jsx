@@ -5,13 +5,17 @@ import { GifGrid } from "./components/GifGrid";
 
 export const GifExpertApp = () => {
 
+    //Se da un valor predefinido para comprobar el correcto funcionamiento
     const [categories, setCategories] = useState(['One Punch']);
 
+    //Función que recibe el nuevo elemento a introducir en categories
     const onAddCategory = (newCategory) =>{
         console.log(newCategory);
+        //En caso de que ya exista una previo igual al que se pretende insertar se sale de la función
         if(categories.includes(newCategory)) {
             return} ; 
-       
+    
+        //Crea una nueva copia del array e introduce la categoria 
         setCategories([...categories, newCategory]);
             
         
@@ -26,7 +30,7 @@ export const GifExpertApp = () => {
 
         {/* /* Input */ }
         <AddCategory
-        /* setCategories={setCategories} */
+        /* Recibe el elemento a insertar en categories(event) */
             onNewCategory={event => onAddCategory(event)}>
         </AddCategory>
 
@@ -35,6 +39,7 @@ export const GifExpertApp = () => {
         
         {categories.map(category =>{
                 return(
+                    /**A cada category se le aplica GifGrid */
                     <GifGrid key={category} category={category}/>
                 )
                       
