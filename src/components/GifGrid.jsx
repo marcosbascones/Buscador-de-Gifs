@@ -13,6 +13,11 @@ export const GifGrid = ({ category }) => {
     <>
       {/* Muestra el nombre de la categoría como título */}
       <h3>{category}</h3>
+      {/* Carga del mensaje  */}
+
+      {
+        isLoading ? (<h2>Cargando las imágenes...</h2>) : null
+      }
       <div className='card-grid'>
         {images.map((image) => (
           // Se añade el id como key y se puede mostrar más datos si se pasan como props
