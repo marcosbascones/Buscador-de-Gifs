@@ -1,8 +1,12 @@
 # GifExpertApp - Buscador de Gifs con React
 
-Aplicación web para buscar y mostrar gifs animados usando la API de Giphy.  
+Aplicación web para buscar y mostrar gifs animados usando la API de Giphy.
+
 Desplegada en Netlify:  
 👉 https://app-recact-gifs.netlify.app/
+
+Desplegada en GitHub Pages:  
+👉 https://marcosbascones.github.io/Buscador-de-Gifs/
 
 ## ⚙️ Tecnologías y conceptos utilizados
 
