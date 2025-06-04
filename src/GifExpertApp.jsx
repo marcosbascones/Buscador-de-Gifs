@@ -6,7 +6,7 @@ import { GifGrid } from "./components/GifGrid";
 export const GifExpertApp = () => {
 
     //Se da un valor predefinido para comprobar el correcto funcionamiento
-    const [categories, setCategories] = useState(['One Punch']);
+    const [categories, setCategories] = useState(['Mario']);
 
     //Función que recibe el nuevo elemento a introducir en categories
     const onAddCategory = (newCategory) =>{
@@ -16,7 +16,7 @@ export const GifExpertApp = () => {
             return} ; 
     
         //Crea una nueva copia del array e introduce la categoria 
-        setCategories([...categories, newCategory]);
+        setCategories([newCategory, ...categories]);
             
         
     }
